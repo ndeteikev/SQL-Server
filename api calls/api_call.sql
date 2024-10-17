@@ -33,14 +33,14 @@ BEGIN
 		EnquiryReason			nVarchar(40)
 	)
 
-	SET @TokenURL = 'https://api.creditregistry.com/nigeria/AutoCred/Test/v8/api/Login'
+	SET @TokenURL = ''
 
-	SET @CustomerURL = 'https://api.creditregistry.com/nigeria/AutoCred/Test/v8/api/FindDetail'
+	SET @CustomerURL = ''
 
-	SET @ScoreURL = 'https://api.creditregistry.com/nigeria/AutoCred/Test/v8/api/GetReport202'
+	SET @ScoreURL = ''
 
 	--first part is get session code
-	SET @TokenRequest = '{"EmailAddress": "samuel.ukpebor@fcmb.com","SubscriberID": "736428735653634598","Password": "CSAdmin@1"}'
+	SET @TokenRequest = '{"EmailAddress": "","SubscriberID": "","Password": ""}'
 
 	Exec p_WriteLogs '/api/Login/', 'REQUEST', @TokenRequest
 	
